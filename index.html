@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Meu portifólio - Willian Niehues</title>
 </head>
@@ -26,26 +27,132 @@
             <p class="badge text-bg-secondary">Figma</p>
             <p class="badge text-bg-secondary">Scratch</p>
             <p class="badge text-bg-secondary">Bootstrap</p>
-            <p class="badge text-bg-secondary">Teaching</p>
+            <p class="badge text-bg-secondary">Specialist History Teacher</p>
             <p class="badge text-bg-secondary">Business Administrator</p>
             
         </div>
     </header>
-    <main class="container">
+    <main class="container mt-5">
         <h2>My Projects</h2>
         <div class="row">
+            <!-- Projeto 1 -->
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem da web Cine History">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Webpage Cine History</h5>
+                      <p class="card-text"> Este projeto é uma page web que aprensenta uma lista de filmes de História fundamentais para sala de aula.</p>
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">
+  Look my project
+</button>
+
                     </div>
                   </div>
             </div>
+
+             <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do player JRM FOOTBALLL">
+                    <div class="card-body">
+                      <h5 class="card-title">JRM FOOTBALLL</h5>
+                      <p class="card-text"> Este projeto é um jogo de penalidades máximas, desenvolvido no ambiente do Scratch. Players João Niehues (goleiro) e Rafael Niehues (batedor das penalidades).</p>
+                     <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">
+  Look my project
+</button>
+
+
+                    </div>
+                  </div>
+            </div>
+            
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do Pong no Java">
+                    <div class="card-body">
+                      <h5 class="card-title">Pong no Java</h5>
+                      <p class="card-text"> Este projeto de rememoração da história dos games, simulando, no ambiente do p5.js, o precursor dos jogos de video game, "Pong", criado há mais de 50 anos (1972) nos EUA.</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Look my project</button>
+
+
+                    </div>
+                  </div>
+            </div>
+
         </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Modal 1 -->
+<div class="modal" id="modal1" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">My Projects</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>My Projects</p>
+          <img src="img/projeto-1.png" class="img-fluid w-100" alt="Imagem representativa do projeto de uma biblioteca online"/>
+      </div>
+      <div class="modal-footer">
+        <a href="https://willian-niehues.github.io/NiehuesCineHistory/">Ver projeto</a>
+        <a href="https://github.com/Willian-Niehues/NiehuesCineHistory">Ver código do projeto</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal" id="modal2" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">JRM FOOTBALL</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/projeto-2.png" class="img-fluid w-100" alt="Imagem do projeto JRM FOOTBALL">
+        <p>Jogo de penalidades desenvolvido no Scratch com jogadores personalizados: João e Rafael Niehues.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://scratch.mit.edu/projects/1109790565/">Ver projeto</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal" id="modal3" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Pong no JavaScript (p5.js)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/projeto-3.png" class="img-fluid w-100" alt="Imagem do projeto Pong">
+        <p>Simulação do clássico jogo Pong utilizando a biblioteca p5.js, destacando os primórdios dos videogames.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://editor.p5js.org/willian_niehues/sketches/upb6o78h8">Ver projeto</a>
+        <a href="https://github.com/Willian-Niehues/jogo-do-pong-no-p5.js">Ver código do projeto</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="container py-5 text-center">
+        <h2> Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/Willian-Niehues">GitHub</a>"
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Willian N S Niehues</p>
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
